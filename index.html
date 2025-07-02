@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConsalPro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body style="overflow-x: hidden;">
+
+    <div class="container-fluid bg p-4" style="position: relative;">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href=""><img class="ms-5" src="header-logo.png" style="height: 25px;"
+                        alt=""></a>
+                <button class="navbar-toggler " style="background-color: white;" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+                        <li class="nav-item dropdown me-5">
+                            <a class="nav-link active dropdown-toggle text-white" href="#Home" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu show ">
+                                <li><a class="dropdown-item hov text-white" href="#">HomeOne</a></li>
+                                <li><a class="dropdown-item hov text-white" href="#">HomeTwo</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active text-white" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown me-5">
+                            <a class="nav-link active dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu show">
+                                <li><a class="dropdown-item hov text-white" href="#">Action</a></li>
+                                <li><a class="dropdown-item hov text-white" href="#">Another action</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-5">
+                            <a class="nav-link active dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu show">
+                                <li><a class="dropdown-item hov text-white" href="#">Action</a></li>
+                                <li><a class="dropdown-item hov text-white" href="#">Another action</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active text-white" aria-disabled="true">Projects</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu show">
+                                <li><a class="dropdown-item hov text-white" href="#">Action</a></li>
+                                <li><a class="dropdown-item hov text-white" href="#">Another action</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <i class="bi bi-grid-3x3-gap-fill fs-3 text-white ak" onclick="btnclick()"></i>
+                    </form>
+                    <!-- From Uiverse.io by Smit-Prajapati -->
+
+                    <div class="form-container" style="position: absolute;right: -55px;top: -60px;z-index: 1;">
+                        <div class="form">
+                            <i class="bi bi-x-circle text-white fs-2" style="position: absolute;right: 10px;top: 15px;"
+                                onclick="closeOne()"></i>
+                            <img src="header-logo.png" style="height: 30px;" alt="">
+                            <h1 class="mt-3" style="color: #ffffff;text-align: center;font-size: 25px;">Get Appointment
+                            </h1>
+                            <input placeholder="Name" type="text" class="input mt-3">
+                            <input placeholder="Email" id="mail" type="email" class="input">
+                            <textarea placeholder="Say Hello" rows="10" cols="30" id="message" name="message"
+                                class="textarea"></textarea>
+                            <div class="button-container">
+                                <div class="send-button">Submit Now</div>
+                                <!-- <div class="reset-button-container">
+                                <div id="reset-btn" class="reset-button">Reset</div>
+                            </div> -->
+                            </div>
+                            <div class=" d-flex justify-content-evenly align-items-start mt-3">
+                                <i class="bi bi-facebook fs-5 text-white"></i>
+                                <i class="bi bi-twitter  fs-5 text-white"></i>
+                                <i class="bi bi-linkedin fs-5 text-white"></i>
+                                <i class="bi bi-dribbble fs-5 text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  -->
+                </div>
+            </div>
+        </nav>
+
+        <div class="row">
+
+            <div class="col-lg-8 py-2 d-flex align-items-start justify-content-center flex-column"
+                style="position: relative;">
+                <img src="hero-1-dawn-shape-1.png" style="position: absolute;top: 200px;" alt="">
+                <img class="img-1" src="hero-1-super-toroid-black-matte-2.png"
+                    style="position: absolute;right: 200px;top: 30px;" alt="">
+                <img class="img" src="hero-1-element-3.png" style="position: absolute;right: 0;top: 70px;" alt="">
+                <h1 class="ms-5 font-1" style="color: #ffffff;font-size: 120px;font-weight: bold;">WE ARE <br> <span
+                        class="bkl">WEB DESIGN</span> <br> <span style="font-weight: 100;">A G E N C E</span></h1>
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel"
+                    style="position: relative;">
+                    <div class="carousel-inner">
+                        <div class="bg1"></div>
+                        <div class="carousel-item active" style="position: relative;" data-bs-interval="10000">
+                            <img src="hone-1-hero-slider-img.png" class="d-block w-100" alt="...">
+                            <h1
+                                style="z-index: 1111;color: #DBDBDB;position: absolute;top: 200px;left: 200px;font-size: 20px;">
+                                I N D U C A T I O N</h1>
+                            <h1 style="position: absolute;color: #ffffff;top: 230px;left: 190px;">Creative
+                                <span>Design</span>
+                            </h1>
+                        </div>
+                        <div class="carousel-item" style="position: relative;" data-bs-interval="2000">
+                            <img src="hone-1-hero-slider-img.png" class="d-block w-100" alt="...">
+                            <h1
+                                style="z-index: 1111;color: #DBDBDB;position: absolute;top: 200px;left: 200px;font-size: 20px;">
+                                I N D U C A T I O N</h1>
+                            <h1 style="position: absolute;color: #ffffff;top: 230px;left: 190px;">Creative
+                                <span>Design</span>
+                            </h1>
+                        </div>
+                        <div class="carousel-item" style="position: relative;">
+                            <img src="hone-1-hero-slider-img.png" class="d-block w-100" alt="...">
+                            <h1
+                                style="z-index: 1111;color: #DBDBDB;position: absolute;top: 200px;left: 200px;font-size: 20px;">
+                                I N D U C A T I O N</h1>
+                            <h1 style="position: absolute;color: #ffffff;top: 230px;left: 190px;">Creative <span
+                                    style="font-weight:400;">Design</span></h1>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-4 py-2  d-flex align-items-center justify-content-start flex-column">
+                <img class="ms-5 mt-5" src="hero-1-block-shape.png" style="height: 300px;" alt="">
+                <img class="mt-5" src="hero-1-ornament-4.png" alt="">
+
+                <p class="mt-5" style="color: #DBDBDB;">Proin efficitur, mauris vel condimentum pulvinar, velit orci
+                    consectetur ligula, eget egestas magna
+                    mi ut
+                    arcu. Phasellus nec odio orci.</p>
+
+                <div class="col-12 d-flex mt-5">
+                    <div class="col-3 d-flex align-items-center justify-content-center flex-column">
+                        <img src="clint-1.jpg" style="height: 70px;width: 70px;border-radius: 50px;" alt="">
+                    </div>
+                    <div class="col-4 d-flex align-items-start justify-content-end flex-column">
+                        <h1 style="color: #ffffff;font-size: 18px;">Eleanor Pena</h1>
+                        <p style="color: #DBDBDB;font-size: 14px;">Eleanor Pena</p>
+                    </div>
+                    <div class="col-5 d-flex align-items-center justify-content-end">
+                        <img src="hero-1-signature.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid  bg py-5">
+        <div class="row px-3">
+            <div class="col-lg-6 d-flex align-items-center justify-content-center flex-column ">
+                <div class="col-12" style="position: relative;">
+                    <img src="home-1-gellary-bg-1.png" style="height: 100%;width: 100%;object-fit: cover;" alt="">
+                    <img style="position: absolute;left: 0;bottom:150px;" src="home-1-gellary-bg-shape.png" alt="">
+                </div>
+                <div class="col-12 d-flex py-2">
+                    <div class="col-6 d-flex align-items-start justify-content-center flex-column mt-4">
+                        <img style="height: 120px;" src="home-1-gellary-bg-4.png" alt="">
+                    </div>
+                    <div class="col-6 d-flex align-items-start justify-content-center flex-column py-2">
+                        <h1 class="bkl-1"> Y E A R S</h1>
+                        <h1 class="display-5 fw-bold" style="color: #ffffff;">E x p e r i e n c e</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 d-flex">
+                <div class="col-6 py-3">
+                    <img class="" src="home-1-gellary-bg-2.png" style="height: 100%;width: 100%;object-fit: cover;" alt="">
+                </div>
+                <div class="col-6 d-flex align-items-center justify-content-center flex-column py-3">
+                    <div class="col-11 d-flex align-items-center justify-content-center">
+                        <img src="home-1-gellary-shape-1.png" alt="">
+                    </div>
+                    <div class="col-11 d-flex align-items-end justify-content-center mt-3 py-3">
+                        <img src="home-1-gellary-bg-3.png" style="height: 100%;width: 100%;object-fit: cover;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg py-5">
+        <div class="row px-3">
+            <div class="col-3 py-5">
+                <img src="home-1-about-shape.png" alt="">
+            </div>
+            <div class="col-9 py-5 d-flex align-items-start justify-content-center flex-column"
+                style="position: relative;">
+                <img src="home-1-about-topographic-1.png"
+                    style="position: absolute;right: 0px;height: 500px;width: 550px;object-fit: cover;" alt="">
+                <p style="color: #EDBC5A;">A b o u t C o m p a n y </p>
+                <h1 style="color: #ffffff;font-size: 50px;font-weight: bold;">Best Creative & Modern <br> Agency</h1>
+                <p style="color: #B0B0B0;font-weight: bold;font-size: 22px;" class="ms-5">Proin efficitur, mauris vel
+                    condimentum pulvinar, velit orci consectetur ligula, <br> eget egestas magna mi ut arcu.</p>
+                <p style="color: #B0B0B0;font-weight: bold;" class="ms-5">Suspendisse sit amet neque euismod, convallis
+                    quam eget, dignissim massa. Aliquam blandit risus <br>
+                    purus, in congue nunc venenatis id. Pellentesque habitant morbi tristique senectus et netus et <br>
+                    malesuada fames ac turpis egestas.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg ">
+        <div class="row px-5">
+            <p class="ms-2" style="color: #EDBC5A;font-size: 20px;">p o r t f o l i o <span><img
+                        src="section-title-arrow.svg" alt=""></span> </p>
+            <h1 style="color: #ffffff;font-size: 50px;">Our latest Awesome <br> Designs</h1>
+        </div>
+        <div class="row px-5 mt-2">
+            <div class="col-lg-5 py-3">
+                <img src="home-1-portfolio-bg-1.png" style="height: 60%;width: 100%;object-fit: cover;" alt="">
+                <div class="col-12 d-flex mt-3" style="border-bottom: 1px solid grey;">
+                    <div class="col-8 d-flex align-items-start justify-content-center flex-column">
+                        <h1 style="color: #ffffff;font-size: 18px;">Brand , Photography</h1>
+                        <h1 style="color: #ffffff;font-size: 25px;font-weight: bold;">CLASSIC CONCRETE <br> PLANTERS
+                        </h1>
+                    </div>
+                    <div class="col-4 d-flex align-items-end justify-content-end">
+                        <img class="mb-2 me-2" src="home-1-up-arrwo-bold.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 py-3">
+
+                <img src="home-1-portfolio-bg-2.png" style="height:75%;width: 90%;object-fit:cover;" alt="">
+
+
+                <div class="col-11 d-flex  mt-3" style="border-bottom: 1px solid grey;">
+                    <div class="col-8 d-flex align-items-start justify-content-center flex-column">
+                        <h1 style="color: #ffffff;font-size: 18px;">Brand , Photography</h1>
+                        <h1 style="color: #ffffff;font-size: 25px;font-weight: bold;">CLASSIC CONCRETE <br> PLANTERS
+                        </h1>
+                    </div>
+                    <div class="col-4 d-flex align-items-end justify-content-end">
+                        <img class="mb-2 me-2" src="home-1-up-arrwo-bold.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg py-2">
+        <div class="row px-5">
+            <div class="col-lg-6 py-3 d-flex align-items-start justify-content-center flex-column">
+
+                <img src="home-1-portfolio-bg-3.png" style="height:80%;width:90%;object-fit:cover;" alt="">
+
+
+                <div class="col-11 d-flex  mt-3" style="border-bottom: 1px solid grey;">
+                    <div class="col-8 d-flex align-items-start justify-content-center flex-column">
+                        <h1 style="color: #ffffff;font-size: 18px;">Brand , Photography</h1>
+                        <h1 style="color: #ffffff;font-size: 25px;font-weight: bold;">CLASSIC CONCRETE <br> PLANTERS
+                        </h1>
+                    </div>
+                    <div class="col-4 d-flex align-items-end justify-content-end">
+                        <img class="mb-2 me-2" src="home-1-up-arrwo-bold.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 mt-3 py-3 d-flex align-items-center justify-content-start flex-column">
+                <img src="home-1-portfolio-bg-4.png" style="height: 60%;width: 100%;object-fit: cover;" alt="">
+                <div class="col-12 d-flex mt-3" style="border-bottom: 1px solid grey;">
+                    <div class="col-8 d-flex align-items-start justify-content-center flex-column">
+                        <h1 style="color: #ffffff;font-size: 18px;">Brand , Photography</h1>
+                        <h1 style="color: #ffffff;font-size: 25px;font-weight: bold;">CLASSIC CONCRETE <br> PLANTERS
+                        </h1>
+                    </div>
+                    <div class="col-4 d-flex align-items-end justify-content-end">
+                        <img class="mb-2 me-2" src="home-1-up-arrwo-bold.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+                <h1 style="text-align: center;color: #EDBC5A;border-radius: 100px;border: 1px solid grey;
+                    width: 270px;height: 80px;
+                    display: flex;align-items: center;justify-content: center;font-size: 28px;">
+                    See all Projects <img src="section-title-arrow.svg" class="ms-3" alt=""></h1>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid bg py-3">
+        <div class="row px-5 mt-5">
+            <div class="d-flex align-items-center justify-content-center flex-column" style="position: relative;">
+                <p class="ms-2" style="color: #EDBC5A;font-size: 20px;">p o r t f o l i o <span><img
+                            src="section-title-arrow.svg" alt=""></span> </p>
+                <h1 style="color: #ffffff;font-size: 50px;font-weight: bold;">Awards Of Our Team</h1>
+                <img src="home-1-protfolio-arrow (1).png" style="position: absolute;left: -50px;bottom: -140px;overflow-x: hidden;" alt="">
+            </div>
+
+        </div>
+        <div class="row px-5 mt-5">
+            <div class="col-lg-4 d-flex py-3">
+                <div class="col-4 d-flex align-items-center justify-content-center">
+                    <img style="background-color: #EDBC5A;padding: 20px 20px;border-radius: 100px;"
+                        src="home-1-portfolio-logo-1.svg" alt="">
+                </div>
+                <div class="col-8 d-flex align-items-end justify-content-center flex-column">
+                    <h1 style="color: #ffffff;font-size: 28px;">CSS Design Awards</h1>
+                    <span style="color: #ffffff;">--------------------------------------</span>
+                    <p style="color: #ffffff;">Year: 2013</p>
+                </div>
+            </div>
+            <div class="col-lg-4 d-flex py-3">
+                <div class="col-4 d-flex align-items-center justify-content-center">
+                    <img style="background-color: #B0B0B0;padding: 20px 20px;border-radius: 100px;"
+                        src="home-1-portfolio-dribbble-2.svg" alt="">
+                </div>
+                <div class="col-8 d-flex align-items-end justify-content-center flex-column">
+                    <h1 style="color: #ffffff;font-size: 28px;">CSS Design Awards</h1>
+                    <span style="color: #ffffff;">--------------------------------------</span>
+                    <p style="color: #ffffff;">Year: 2013</p>
+                </div>
+            </div>
+            <div class="col-lg-4 d-flex py-3">
+                <div class="col-4 d-flex align-items-center justify-content-center">
+                    <img style="background-color: #ffffff;padding: 20px 20px;border-radius: 100px;"
+                        src="home-1-portfolio-behance-3.svg" alt="">
+                </div>
+                <div class="col-8 d-flex align-items-end justify-content-center flex-column">
+                    <h1 style="color: #ffffff;font-size: 28px;">CSS Design Awards</h1>
+                    <span style="color: #ffffff;">--------------------------------------</span>
+                    <p style="color: #ffffff;">Year: 2013</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container-fluid py-3"
+        style="background-image: url(why-choose-us-bg.png);background-size: cover;background-repeat: no-repeat;">
+
+        <div class="row px-5">
+
+            <div class="col-lg-5 py-5 d-flex align-items-start justify-content-center flex-column ">
+                <p style="color: #EDBC5A;">Why Choose Us <span><img src="section-title-arrow.svg" alt=""></span></p>
+                <h1 class="display-5" style="color: #ffffff;font-weight: bold;">We Provide <br> Services <br> In One
+                    Places</h1>
+                <h1 style="color: #ffffff;font-size: 22px;">Proin efficitur, mauris vel <br> condimentum pulvinar.</h1>
+                <p style="color: #B0B0B0;font-weight: bold;">Suspendisse sit amet neque euismod, convallis <br> quam
+                    eget, dignissim massa. Aliquam blandit <br> risus
+                    purus, in congue nunc venenatis id.</p>
+
+                <button type="button" class="btn btn-link" style="color: #EDBC5A;font-size: 22px;">View All
+                    Services</button>
+            </div>
+            <div class="col-lg-5 py-5 d-md-flex flex-wrap">
+                <div class="col-6 d-flex align-items-start justify-content-center flex-column">
+                    <h1 class="ms-5" style="color: #ffffff;font-size: 120px;">45</h1>
+                    <p class="ms-5" style="color: #ffffff;font-size: 22px;font-weight: bold;"> EXPERT TEAM MEMBER </p>
+                </div>
+                <div class="col-6 d-flex align-items-start justify-content-center flex-column">
+                    <h1 class="ms-5" style="color: #ffffff;font-size: 120px;">20+</h1>
+                    <p class="ms-5" style="color: #ffffff;font-size: 22px;font-weight: bold;"> YEAR OF EXPERIENCE </p>
+                </div>
+                <div class="col-6 d-flex align-items-start justify-content-center flex-column">
+                    <h1 class="ms-5" style="color: #ffffff;font-size: 120px;">0</h1>
+                    <p class="ms-5" style="color: #ffffff;font-size: 22px;font-weight: bold;"> AWARDS WINNING </p>
+                </div>
+                <div class="col-6 d-flex align-items-start justify-content-center flex-column">
+                    <h1 class="ms-5" style="color: #ffffff;font-size: 120px;">0k</h1>
+                    <p class="ms-5" style="color: #ffffff;font-size: 22px;font-weight: bold;"> PROJECT'S COMPLETE </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid bg py-2" style="overflow: hidden;">
+        <div class="row">
+            <p style="color: #EDBC5A;text-align: center;">Member <span><img src="section-title-arrow.svg" alt=""></span>
+            </p>
+            <h1 style="color: #ffffff;text-align: center;font-weight: bold;">Awards Of Our Team</h1>
+        </div>
+        <div class="row flex-wrap ">
+            <div class="col-lg-6  d-flex  py-5">
+                <div class="col-md-5 py-3 d-flex align-items-center justify-content-center py-3">
+                    <img src="home-1-team-1.png" style="height: 170px;width: 170px;border-radius: 100px;object-fit: cover;" alt="">
+                </div>
+                <div class="col-md-7 py-3 d-flex align-items-start justify-content-center flex-column"
+                    style="overflow-x: hidden;">
+                    <h1 class="display-5 ms-4" style="color: #ffffff;font-weight: bold;">Cameron Williamson</h1>
+                    <p style="color: #B0B0B0;font-weight: bold;font-size: 18px;" class="ms-4 mt-2">CEO</p>
+                    <div class="col-8 d-flex justify-content-between align-items-center mt-2 ms-4"
+                        style="overflow: hidden;height: 60px;">
+                        <i class="bi bi-facebook fs-5 text-white icon"></i>
+                        <i class="bi bi-twitter  fs-5 text-white icon"></i>
+                        <i class="bi bi-linkedin fs-5 text-white icon"></i>
+                        <i class="bi bi-dribbble fs-5 text-white icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6  d-flex py-5">
+                <div class="col-md-5 d-flex align-items-center justify-content-center py-3">
+                    <img src="home-1-team-4.png" style="height: 170px;width: 170px;border-radius: 100px;" alt="">
+                </div>
+                <div class="col-7 py-3 d-flex align-items-start justify-content-center flex-column">
+                    <h1 class="display-5 ms-4" style="color: #ffffff;font-size: 28px;font-weight: bold;">Cameron Williamson</h1>
+                    <p class="ms-4 mt-2" style="color: #B0B0B0;font-weight: bold;font-size: 18px;">CEO</p>
+                    <div class="col-8 d-flex justify-content-between align-items-center mt-2 ms-4"
+                        style="overflow: hidden;height: 60px;">
+                        <i class="bi bi-facebook fs-5 text-white icon"></i>
+                        <i class="bi bi-twitter  fs-5 text-white icon"></i>
+                        <i class="bi bi-linkedin fs-5 text-white icon"></i>
+                        <i class="bi bi-dribbble fs-5 text-white icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6  d-flex  py-5">
+                <div class="col-md-5 d-flex align-items-center justify-content-center py-3">
+                    <img src="home-1-team-3.png" style="height:170px;width: 170px;border-radius: 100px;" alt="">
+                </div>
+                <div class="col-7 py-3 d-flex align-items-start justify-content-center flex-column">
+                    <h1 class="display-5 ms-4" style="color: #ffffff;font-size: 28px;font-weight: bold;">Cameron Williamson</h1>
+                    <p class="ms-4 mt-2" style="color: #B0B0B0;font-weight: bold;font-size: 18px;">CEO</p>
+                    <div class="col-8 d-flex justify-content-between align-items-center mt-2 ms-4"
+                        style="overflow: hidden;height: 60px;">
+                        <i class="bi bi-facebook fs-5 text-white icon"></i>
+                        <i class="bi bi-twitter  fs-5 text-white icon"></i>
+                        <i class="bi bi-linkedin fs-5 text-white icon"></i>
+                        <i class="bi bi-dribbble fs-5 text-white icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6  d-flex  py-5">
+                <div class="col-5 d-flex align-items-center justify-content-center py-3">
+                    <img src="home-1-team-2.png" style="height: 170px;width: 170px;border-radius: 100px;" alt="">
+                </div>
+                <div class="col-7 py-3 d-flex align-items-start justify-content-center flex-column">
+                    <h1 class="ms-4" style="color: #ffffff;font-size: 28px;font-weight: bold;">Cameron Williamson</h1>
+                    <p class="ms-4 mt-2" style="color: #B0B0B0;font-weight: bold;font-size: 18px;">CEO</p>
+                    <div class="col-8 d-flex justify-content-between align-items-center mt-2 ms-4"
+                        style="overflow: hidden;height: 60px;">
+                        <i class="bi bi-facebook fs-5 text-white icon"></i>
+                        <i class="bi bi-twitter  fs-5 text-white icon"></i>
+                        <i class="bi bi-linkedin fs-5 text-white icon"></i>
+                        <i class="bi bi-dribbble fs-5 text-white icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid"
+        style="background-image: url(video-popup-bg.png);height: 100vh;background-size: cover;background-position: center;position: relative;overflow: hidden;">
+        <div class="row">
+            <img src="home-1-video-popup-shape.png"
+                style="height: 220px;object-fit: contain;position: absolute;top: 210px;" alt="">
+            <span class="p1" style="position: absolute;color: #ffffff;font-size: 30px;top: 45%;left: 47%;">Play</span>
+        </div>
+    </div>
+
+
+    <div class="container-fluid py-5 bg">
+        <div class="row">
+            <p style="color: #EDBC5A;text-align: center;">B L O G & N E W S <span><img src="section-title-arrow.svg"
+                        alt=""></span></p>
+            <H1 style="color: #ffffff;font-size: 50px;text-align: center;">Our Latest News & Blog Get <br>
+                Every Updates</H1>
+        </div>
+        <div class="row px-5">
+            <div class="col-lg-4 ">
+                <div class="col-12 ten-box py-4" style="height: 440px;overflow: hidden;">
+                    <p style="color: #B0B0B0;">February - 22th 2024</p>
+                    <h1 style="color: white;font-size: 20px;">Will you be attending Affiliate Summit Europe?</h1>
+                    <p class="ten-sec" style="color: #B0B0B0;font-weight: bold;">I have been a loyal customer of this
+                        auto parts company for years and I cannot recommend them
+                        enough. Their extensive selection.</p>
+                    <img src="home-1-blog-img-1.png" style="height: 170px;width: 100%;" alt="">
+                    <!-- <a href="#"> <span class="ten-main"><i class="bi bi-arrow-right fs-5 text-white"></i></span ></a> -->
+                </div>
+            </div>
+            <div class="col-lg-4 ">
+                <div class="col-12 ten-box py-4" style="height: 440px;overflow: hidden;">
+                    <p style="color: #B0B0B0;">February - 22th 2024</p>
+                    <h1 style="color: white;font-size: 20px;">Will you be attending Affiliate Summit Europe?</h1>
+                    <p class="ten-sec" style="color: #B0B0B0;font-weight: bold;">I have been a loyal customer of this
+                        auto parts company for years and I cannot recommend them
+                        enough. Their extensive selection.</p>
+                    <img src="home-1-blog-img-2.png" style="height: 170px;width: 100%;" alt="">
+                    <!-- <a href="#"> <span class="ten-main"><i class="bi bi-arrow-right fs-5 text-white"></i></span ></a> -->
+                </div>
+            </div>
+            <div class="col-lg-4 ">
+                <div class="col-12 ten-box py-4" style="height: 440px;overflow: hidden;">
+                    <p style="color: #B0B0B0;">February - 22th 2024</p>
+                    <h1 style="color: white;font-size: 20px;">Will you be attending Affiliate Summit Europe?</h1>
+                    <p class="ten-sec" style="color: #B0B0B0;font-weight: bold;">I have been a loyal customer of this
+                        auto parts company for years and I cannot recommend them
+                        enough. Their extensive selection.</p>
+                    <img src="home-1-blog-img-3.png" style="height: 170px;width: 100%;" alt="">
+                    <!-- <a href="#"> <span class="ten-main"><i class="bi bi-arrow-right fs-5 text-white"></i></span ></a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg py-5">
+        <div class="row px-5">
+            <div class="col-lg-3 py-4 d-flex align-items-start justify-content-start"
+                style="border-bottom: 1px solid #B0B0B0;border-right: 1px solid #B0B0B0;">
+                <img src="header-logo.png" alt="">
+            </div>
+            <div class="col-lg-9 py-4 d-flex align-items-center justify-content-center flex-wrap" style="border-bottom: 1px solid #B0B0B0;overflow: hidden;">
+                <p style="color: #EDBC5A;"><i class="bi bi-envelope fs-4 ms-3"></i></p>
+                <p style="color: #fff;" class="fs-5 ms-3"> georgia.young@example.com</p>
+                <div class="col-6 d-flex justify-content-center align-items-center">
+                    <p><i class="bi bi-facebook  fs-3 text-white ms-5"></i></p>
+                    <p style="color: #ffffff;" class="mt-2 ms-2 nav-link">facebook</p>
+
+                    <p><i class="bi bi-pinterest fs-3 text-white ms-5"></i></p>
+                    <p style="color: #ffffff;" class="mt-2 ms-2 nav-link">pinterest</p>
+
+                    <p><i class="bi bi-linkedin fs-3 text-white ms-5"></i></p>
+                    <p style="color: #ffffff;" class="mt-2 ms-2 nav-link">linkedin</p>
+                </div>
+            </div>
+        </div>
+        <div class="row px-5">
+            <div class="col-lg-3 py-3 d-flex align-items-start justify-content-center flex-column"
+                style="border-right: 1px solid #B0B0B0;">
+                <h1 style="color: #fff;font-weight: bold;font-size: 40px;">LET’S WOEKS</h1>
+                <h1 style="color: #fff;font-weight: 200;">T O G E T H E R</h1>
+                <h1 style="padding: 12px 24px;border: 1px solid grey;color: #fff;font-size: 17px;border-radius: 50px;">
+                    alma.lawson@example.com <img src="home-1-up-arrwo-bold.svg" style="height: 10px;" alt=""> </h1>
+            </div>
+            <div class="col-lg-3 py-3 d-flex align-items-start justify-content-center flex-column">
+                <h1 class="ms-4" style="color: #fff;font-size:30px;">Quick Links</h1>
+                <p  class="ms-4" style="color: #fff;">Home</p>
+                <p  class="ms-4" style="color: #fff;">UI UX Design</p> 
+                <p  class="ms-4" style="color: #fff;">Portfolio</p> 
+                <p  class="ms-4" style="color: #fff;">Web Design</p>
+            </div>
+            <div class="col-lg-2 py-3 d-flex align-items-start justify-content-center flex-column">
+                <p  class="ms-4 mt-5" style="color: #fff;">Works</p>
+                <p  class="ms-4" style="color: #fff;">WordPress</p> 
+                <p  class="ms-4" style="color: #fff;">Popular Services</p> 
+                <p  class="ms-4" style="color: #fff;">Branding</p>
+            </div>
+            <div class="col-lg-2 py-3 d-flex align-items-start justify-content-center flex-column">
+                <h1 class="mb-4"  style="color: #fff;font-size: 30px;">Other</h1>
+                <p  class="mb-3" style="color: #fff;">Privacy Policy</p>
+                <p  class="mb-5" style="color: #fff;">How IT Works</p>
+             
+            </div>
+            <div class="col-lg-2 py-3 d-flex align-items-center justify-content-end">
+                <button class="btn1">Message <br> Us <br> <i class="bi bi-cursor-fill"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let detail = document.querySelector('.form-container');
+        let btnVar = document.querySelector(".ak");
+
+        function btnclick() {
+            detail.style.display = "flex";
+
+        }
+        function closeOne() {
+            detail.style.display = "none";
+
+        }
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

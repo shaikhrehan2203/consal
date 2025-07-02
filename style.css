@@ -1,0 +1,277 @@
+
+.box{
+
+    color: #EDBC5A;
+
+}
+
+.bg {
+
+    background: #383809;
+    background: linear-gradient(90deg, rgba(29, 29, 4, 0.884) 10%, rgba(8, 8, 8, 1) 44%);
+   
+}
+
+.nav-link:hover {
+
+    transition: .3s linear;
+    color: #EDBC5A !important;
+
+}
+
+.nav-item .show{
+  display: none !important; 
+  background-color: black;
+  
+}
+
+.nav-item:hover .show{
+  display: block !important;
+}
+.ak:hover {
+
+    transition: .3s linear;
+  color: #EDBC5A !important;
+
+}
+
+.bkl {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    color: transparent;
+}
+
+.bkl-1 {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #EDBC5A !important;
+    color: transparent !important;
+}
+
+/* From Uiverse.io by Smit-Prajapati */ 
+
+
+.form-container {
+  max-width: 600px;
+  margin: 30px;
+  background-color: #545454;
+  padding: 100px;  
+  /* clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%); */
+  display: none;
+  position: relative;
+}
+
+.heading {
+  display: block;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.form-container .form .input {
+  color: #87a4b6;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.286) !important;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  border-left: 1px solid transparent;
+}
+
+
+.form-container .form .textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.286) !important;
+  font-weight: bold;
+  resize: none;
+  max-height: 150px;
+  margin-bottom: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+
+.form-container .form .button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.form-container .form .button-container .send-button {
+  flex-basis: 100%;
+  background: transparent;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid white;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .button-container .send-button:hover {
+background: #EDBC5A;
+  color: #ffffff;
+}
+
+/* .form-container .form .button-container .reset-button-container {
+  filter: drop-shadow(1px 1px 0px #ff7a01);
+  flex-basis: 30%;
+}
+
+.form-container .form .button-container .reset-button-container .reset-button {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  color: #ff7a01;
+  font-weight: bold;
+  background: #001925;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .button-container .reset-button-container .reset-button:hover {
+  background: #ff7a01;
+  color: #001925;
+} */
+
+.img-1{
+
+  animation-name: img-1;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+
+  
+}
+
+.bg1{
+
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  right: 0;
+  z-index: 1111;
+  background-color: black;
+  display: none;
+
+}
+
+.icon{
+  overflow:  hidden;
+}
+.icon:hover{
+
+  background-color: maroon;
+  transition: .3s linear;
+  padding: 10px 10px;
+  border-radius: 20px;
+  overflow: hidden;
+
+}
+
+.ten-sec {
+
+  opacity: 0;
+  height: 0;
+
+}
+
+.ten-box:hover .ten-sec {
+
+  height: auto;
+  opacity: 1;
+  transition: .5s linear;
+
+}
+
+
+.ten-main{
+
+  padding: 12px 18px;
+  background-color: #EDBC5A;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 80%;
+  opacity: 0;
+
+  
+}
+
+.ten-box:hover .ten-main {
+
+  opacity: 1;
+  transition: .3s linear;
+
+}
+
+.btn1 {
+  height:150px;
+  width: 150px;
+  background-color: #EDBC5A;
+  border-radius: 200px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn1:hover{
+  color: #fff;
+  transition: .3s linear;
+}
+
+.hov:hover{
+
+  color: #EDBC5A !important;
+
+}
+
+@keyframes img-1{
+
+  0%{
+    transform: rotate(360deg);
+    transition: .3s linear;
+  }
+
+}
+
+@media only screen and (max-width:430px){
+
+
+  .bg{
+
+    height: 100%;
+
+  }
+
+  .font-1{
+
+    font-size: 45px !important;
+    margin-right: 80px !important;
+
+  }
+
+  .img {
+
+    height: 70px !important;
+    margin-top: 10px !important;
+    margin-right: 130px !important;
+
+  }
+
+  .img-1{
+    height: 70px !important;
+    margin-right: -120px !important;
+  }
+
+  .p1{
+    margin-top: -120px !important  ;
+    margin-right: -10px !important;
+  }
+
+} 
